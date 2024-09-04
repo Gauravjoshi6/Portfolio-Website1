@@ -1,0 +1,474 @@
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities; 
+
+
+/* // @import "../node_modules/bootstrap/scss/functions";  */
+/* #root{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+} */
+body{
+    background-color: rgba(11, 26, 51);
+    color: white;
+    /* display:flex;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+    /* min-height: 100vh; */
+    /* flex-direction: column; */ 
+}
+
+
+/* NavBar */
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px 16px 16px;
+}
+ .nav_bar{
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ .nav_bar:hover{
+    border-bottom: 4px solid yellow;
+    color:yellow ;
+    
+}
+
+/* Home Page */
+
+
+
+.Home{
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   height: 80vh;
+   
+}
+
+.Hello h1{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    /* animation: typing 3s steps(22, end) infinite;  */
+    /* border-right: 5px solid white; */
+    animation: typing 3s steps(22, end) infinite;
+}
+
+
+
+ .Home .Hello{
+    background-color: rgb(22, 58, 118);
+    width: 550px;
+    box-shadow: 3px 3px 8px 8px yellow;
+    border-radius: 10px;
+    text-align: center;
+   padding: 25px;
+   /* white-space: nowrap;
+   overflow: hidden; */
+   animation-name: man;
+   animation-duration: 2s;
+   animation-iteration-count:inherit;
+   display: inline-block;
+     
+}
+
+.img{
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+   border: 5px solid yellow;
+   animation-name: superman;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+  
+}
+.Hello button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 25px;
+}
+.Hello button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.Hello:hover{
+    /* border: 2px solid white; */
+  padding: 30px;
+}
+
+
+
+@keyframes superman {
+    0%{
+     border-color: rgb(14, 14, 245);
+     transform: translate(0, 0px);
+     box-shadow: 10px 10px 100px 50px rgb(14, 14, 245);
+    }
+    25%{
+     border-color: rgb(232, 232, 8);
+     box-shadow: 10px 10px 100px 50px rgb(232, 232, 8); 
+    }
+    50%{
+        border-color: rgba(83, 42, 164, 0.963);
+        transform: translate(0, 10px);
+        box-shadow: 10px 10px 100px 50px rgba(83, 42, 164, 0.963);
+    }
+    75%{
+        border-color: rgb(5, 219, 243);
+        box-shadow: 10px 10px 100px 50px rgb(5, 219, 243);
+    }
+    100%{
+        border-color: rgb(95, 11, 205);
+        transform: translate(0, -0px);
+        box-shadow: 10px 10px 100px 50px rgb(95, 11, 205);
+    }
+}
+
+
+
+@keyframes man {
+    0%{
+    scale: 0;
+    }
+    
+    100%{
+     scale: 1;
+    }
+}
+
+
+
+
+
+/* About */
+
+
+.About h1{
+    
+    font-weight: bold;
+    font-size: 4rem;
+    margin-left:550px ;
+}
+
+
+
+.card{
+    background-color: rgb(22, 58, 118);
+    display:flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 8px yellow;
+}
+
+.card p{
+    
+    /* flex-direction: column; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.card img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.apj{
+    display: flex;
+    background-color: rgb(22, 58, 118);
+    margin-top: 40px;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 8px yellow;
+    
+}
+
+.apj img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.apj p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Resume */
+
+.Resume h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 550px;
+    margin-top: 100px;
+}
+.Resume .para {
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.619);
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.experience h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+ 
+}
+.computer{
+    background-color:rgb(22, 58, 118) ;
+    margin-left: 400px;
+    padding: 40px 80px 40px 80px;
+    margin-top: 40px;
+    display: inline-block;
+    box-shadow: 3px 3px 8px 8px yellow;
+    border-radius: 10px;
+}
+.computer h2{
+    font-weight: lighter;
+    
+}
+.computer .sun{
+    color:rgba(191, 255, 0, 0.915);
+    font-weight: bold;
+}
+
+.computer h5{
+    font-size: 1.2rem;
+   font-weight: bold;
+   color:rgba(255, 255, 255, 0.758) ;
+}
+.computer p {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.758) ;
+}
+.fresher h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.Education{
+   
+    display: flex;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.Btech{
+    background-color: rgb(22, 58, 118);
+    padding: 40px;
+    margin-left: 50px;
+    box-shadow: 3px 3px 8px 8px yellow;
+    border-radius: 15px;
+}
+
+.Btech p{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    color:rgba(255, 255, 255, 0.549);
+}
+.Btech .sun{
+    color:rgba(191, 255, 0, 0.915);
+    font-weight: bold;
+}
+.Btech h6{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.549);
+}
+
+
+/* Projects */
+
+.Project{
+    margin-left: 350px;
+    margin-top: 100px;
+}
+.Project h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 240px;
+}
+.props img{
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.Amazon{
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.props{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(17, 12, 12, 0.709) ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 8px yellow;
+}
+
+.text{
+    display: flex;
+    margin-top: 60px;
+    gap: 60px;
+}
+
+.props h5 {
+    font-weight: bold;
+   margin-top: 30px;
+}
+
+.props button{
+    border: 3px solid yellowgreen;
+    color:white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.props button:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+
+.more{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.more span{
+    color: rgb(255, 200, 0);
+}
+
+.more button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 200px;
+    background-color: rgb(255, 200, 0);
+}
+
+
+/* Contact */
+
+.contact{
+    margin-left: 530px;
+    margin-top: 80px;
+   
+}
+
+.contact h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.contact p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.758);
+}
+.images{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 200px;
+    margin-left: 150px;
+    text-align: center;
+    
+}
+.Address li{
+    list-style-type: none;
+}
+.images img{
+    
+    color:white;
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+    background-color:rgb(22, 58, 118) ;
+    padding: 40px; 
+    border-radius:50%;
+}
+
+/* .aspect{
+   
+} */
+
+.Address h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.linkedin ul {
+   display: flex;
+   flex-direction: row;
+  gap:40px;
+  margin-left: 400px;
+  margin-top: 80px;
+
+}
+.linkedin ul {
+    list-style-type: none;
+}
+.linkedin img{
+    height: 50px;
+    width: 50px;
+   
+}
+.linkedin .aspect{
+ background-color:rgb(22, 58, 118);
+    padding: 20px;
+    border-radius: 50%;
+}
+.linkedin p{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+/* Responsive */
+
